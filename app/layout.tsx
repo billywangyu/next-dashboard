@@ -53,9 +53,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    // 定义html标签
+    {/*定义html标签*/}
       <body className={`${inter.className} antialissed`}>{children}</body>
-      // 定义body标签，并添加字体和抗锯齿样式
+       {/*定义body标签，并添加字体和抗锯齿样式*/}
     </html>
   );
 }

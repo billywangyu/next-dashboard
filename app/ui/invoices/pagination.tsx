@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { generatePagination } from '@/app/lib/utils';
 import { usePathname,useSearchParams } from 'next/navigation';
 
+
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
   const pathname = usePathname();
@@ -42,7 +43,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
             return (
               <PaginationNumber
                 key={page}
-                href={createPageURL(page)}
+                href={createPageURL(page as number )}
                 page={page}
                 position={position}
                 isActive={currentPage === page}
