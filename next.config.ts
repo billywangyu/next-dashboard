@@ -1,13 +1,13 @@
 import type { NextConfig } from 'next';
 
 module.exports = {
-  experimental: {
-    // optimizeFonts: true,
-  },
-};
+  pageExtensions: ['tsx', 'ts', 'js', 'jsx'],
+}
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    ppr: 'incremental'
+  }
 };
-
+ 
 export default nextConfig;
